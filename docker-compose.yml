@@ -1,0 +1,10 @@
+version: '3.10'
+
+services:
+  fastapi:
+    build: ./
+    ports:
+      - '8090:8090'
+    stdin_open: true
+    volumes:
+      - './:/code'
